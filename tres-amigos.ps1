@@ -148,11 +148,19 @@ while ($proceed -eq "n"){
     Write-Host
     Write-Host "                                   You entered $animal, $vehicle, $store, $dessert "
     Write-Host
+
+    ## if the player decides that he wants to make changes to the values they entered
+    ## he can do so by saying N or n, saying Y or y will proceed with the story
+    ## 
+    ## on the condition that's (N | n) the vars are re-initialized and control is brought 
+    ## back to the part of the code where the values are asked and stored
+
     $proceed = Read-Host "                            Are you ready to proceed (Y) (N)?"
 
 }
 
 ## display our story
+## Page 1
 
 Clear-Host
 
@@ -184,6 +192,7 @@ Write-Host " Press Enter to continue."
 ## Pause script execution and wait for the player to press the Enter key
 Read-Host
 
+## Page 2
 Clear-Host
 
 Write-Host
@@ -214,6 +223,7 @@ Write-Host " Press Enter to continue."
 #Pause script execution and wait for the player to press the Enter key
 Read-Host
 
+## Page 3
 Clear-Host
 
 Write-Host
@@ -242,10 +252,11 @@ Write-Host
 Write-Host
 Write-Host " Press Enter to continue."
 
-##Pause script execution and wait for the player to press the Enter key
+## Pause script execution and wait for the player to press the Enter key
 
 Read-Host
 
+## Page 4
 Clear-Host
 
 Write-Host
@@ -267,6 +278,8 @@ Write-Host
 Write-Host
 Write-Host
 Write-Host 
+
+## create a 5-second delay before returning the player to the command shell
 
 Start-Sleep -Seconds 5
 
