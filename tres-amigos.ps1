@@ -240,6 +240,18 @@ Write-Output "                                   The Story of the Tres Amigos"
 Write-Output ""
 Write-Output "             Copyright 2019 - Teo Espero, Cloud and Systems Administration (BS)"
 Write-Output "                                   Western Governors University"
+Write-Host
+Write-Host
+Write-Host
+Write-Host
+Write-Host
+Write-Host
+Write-Host
+Write-Host 
+
+Start-Sleep -Seconds 5
+
+Clear-Host
 
 #################################################################
 # EOF 
