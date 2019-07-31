@@ -11,13 +11,6 @@
 # never told the same way twice.
 #################################################################
 
-## let's declare our vars
-
-$animal = "" # this var will store the name of the animal that the user will supply
-$vehicle = "" # this var will store the name of the vehicle that the user will supply
-$store = "" # this var will store the name of the store that the user will supply
-$dessert = "" # this var will store the name of the dessert that the user will supply
-
 ## display the game's opening screen
 
 Clear-Host
@@ -34,7 +27,7 @@ Write-Host "                                        O F   T H E   T H R E E   A 
 Write-Host
 Write-Host
 Write-Host                               
-Write-Host "                                                  By Jerry Lee Ford, Jr."
+Write-Host "                                                    By Teo Espero"
 Write-Host
 Write-Host "                                    ***********************************************"
 Write-Host
@@ -66,8 +59,8 @@ Write-Host
 Write-Host "                             This is an interactive mad-lib styled story. Before it can be"
 Write-Host
 Write-Host "                                         told, you must answer a few questions."
-Write-Host                               
-Write-Host 
+Write-Host
+Write-Host
 Write-Host
 Write-Host 
 Write-Host
@@ -83,54 +76,80 @@ Write-Host " Press Enter to continue."
 ## Pause the script execution and wait for the player to press the Enter key
 Read-Host
 
-## Ask the player the first question
-while ($animal -eq ""){
-    Clear-Host 
+$proceed = "n"
+
+while ($proceed -eq "n"){
+
+    ## let's declare our vars
+
+    $animal = "" # this var will store the name of the animal that the user will supply
+    $vehicle = "" # this var will store the name of the vehicle that the user will supply
+    $store = "" # this var will store the name of the store that the user will supply
+    $dessert = "" # this var will store the name of the dessert that the user will supply
+
+    ## Ask the player the first question
+    while ($animal -eq ""){
+        Clear-Host 
+
+        Write-Host
+        Write-Host
+        Write-Host
+        Write-Host
+        Write-Host
+        Write-Host
+        $animal = read-host " Enter the name of a scary animal "
+    }
+
+
+    ## Ask the player the second question
+    while ($vehicle -eq ""){
+        Clear-Host #Clear the Windows command console screen
+        Write-Host
+        Write-Host
+        Write-Host
+        Write-Host
+        Write-Host
+        Write-Host
+        $vehicle = read-host " Enter a type of vehicle "
+    }
+
+    ## Ask the player the third question
+    while ($store -eq ""){
+        Clear-Host #Clear the Windows command console screen
+        Write-Host
+        Write-Host
+        Write-Host
+        Write-Host
+        Write-Host
+        Write-Host
+        $store = read-host " Enter the name of a store "
+    }
+
+    ## Ask the player the third question
+    while ($dessert -eq ""){
+        Clear-Host #Clear the Windows command console screen
+        Write-Host
+        Write-Host
+        Write-Host
+        Write-Host
+        Write-Host
+        Write-Host
+        $dessert = read-host " Enter a type of dessert  "
+    }
+
+    ## display players input
+
+    Clear-Host
 
     Write-Host
     Write-Host
     Write-Host
     Write-Host
     Write-Host
+    Write-Host "                                   You entered $animal, $vehicle, $store, $dessert "
     Write-Host
-    $animal = read-host " Enter the name of a scary animal "
-}
+    $proceed = Read-Host "                            Are you ready to proceed (Y) (N)?"
 
-
-## Ask the player the second question
-while ($vehicle -eq ""){
-    Clear-Host #Clear the Windows command console screen
-    Write-Host
-    Write-Host
-    Write-Host
-    Write-Host
-    Write-Host
-    Write-Host
-    $vehicle = read-host " Enter a type of vehicle "
-}
-
-## Ask the player the third question
-while ($store -eq ""){
-    Clear-Host #Clear the Windows command console screen
-    Write-Host
-    Write-Host
-    Write-Host
-    Write-Host
-    Write-Host
-    Write-Host
-    $store = read-host " Enter the name of a store "
-}
-
-## Ask the player the third question
-while ($dessert -eq ""){
-    Clear-Host #Clear the Windows command console screen
-    Write-Host
-    Write-Host
-    Write-Host
-    Write-Host
-    Write-Host
-    Write-Host
-    $dessert = read-host " Enter a type of dessert  "
 }
 
 ## display our story
