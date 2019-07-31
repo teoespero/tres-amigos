@@ -159,7 +159,9 @@ while ($proceed -eq "n"){
 
 }
 
+#################################################################
 ## display our story
+
 ## Page 1
 
 Clear-Host
@@ -256,6 +258,10 @@ Write-Host " Press Enter to continue."
 
 Read-Host
 
+
+#################################################################
+## Show credits 
+
 ## Page 4
 Clear-Host
 
@@ -266,10 +272,10 @@ Write-Host
 Write-Host 
 Write-Host
 Write-Host
-Write-Output "                                   The Story of the Tres Amigos"
-Write-Output ""
-Write-Output "             Copyright 2019 - Teo Espero, Cloud and Systems Administration (BS)"
-Write-Output "                                   Western Governors University"
+Write-Host "                                   The Story of the Tres Amigos"
+Write-Host 
+Write-Host "             Copyright 2019 - Teo Espero, Cloud and Systems Administration (BS)"
+Write-Host "                                   Western Governors University"
 Write-Host
 Write-Host
 Write-Host
@@ -286,5 +292,4 @@ Start-Sleep -Seconds 5
 Clear-Host
 
 #################################################################
-# EOF 
-#################################################################
+## EOF 
