@@ -146,7 +146,7 @@ while ($proceed -eq "n"){
     Write-Host
     Write-Host
     Write-Host
-    Write-Host "                                   You entered $animal, $vehicle, $store, $dessert "
+    Write-Host "You entered $animal, $vehicle, $store, $dessert "
     Write-Host
 
     ## if the player decides that he wants to make changes to the values they entered
@@ -155,7 +155,7 @@ while ($proceed -eq "n"){
     ## on the condition that's (N | n) the vars are re-initialized and control is brought 
     ## back to the part of the code where the values are asked and stored
 
-    $proceed = Read-Host "                            Are you ready to proceed (Y) (N)?"
+    $proceed = Read-Host "Are you ready to proceed (Y) or (N)?"
 
 }
 
